@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - Tutor World</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="profile.html">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <script>
+        // JavaScript to show the alert on form submission
+        function showAlert() {
+            alert("Message Sent!");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo"><img src="WhatsApp Image 2024-11-04 at 17.31.10_a753ae37.jpg"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="aboutus1.html">About Us</a></li>
+                <li><a href="Courses1.html">Courses</a></li>
+                <li><a href="loginpage.html">Login</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><i class="fa-solid fa-user"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Tutor World</h1>
+        <p>Bring your goals into focus.</p>
+        <div><a href="register.html" class="btn">Register Now</a></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="dark-bg">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>"An online study platform offering diverse courses, expert instructors, and flexible learning to help you achieve your educational goals."</p>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="Login">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="Login">
+                <div class="program">
+                    <h3>Frontend Engineering</h3>
+                    <p>Provided with HTML, CSS and Javascript courses.</p>
+                </div>
+                <div class="program">
+                    <h3>Backend Engineering</h3>
+                    <p>Provided with C#, PHP and SQL courses. </p>
+                </div>
+                <div class="program">
+                    <h3>Coding Languages</h3>
+                    <p>Provided with Python, C,C++ etc. courses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate">
+        <div class="container">
+            <h2>Get Admission</h2>
+            <p>“Sign up today and take control of your learning journey”</p>
+            <a href="register.html" class="btn">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="dark-bg">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to get involved, feel free to reach out to us.</p>
+            <form onsubmit="showAlert(); return false;">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tutor World. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

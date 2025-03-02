@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="icon" type="image/png" href="./images/logo.jpg"> 
+    <link rel="stylesheet" href="python.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-image: url(1.avif);
+        /* background-color: #465c6e; */
+        background-size: contain;
+        color: white;
+    }
+
+    div.line {
+        display: inline;
+        width: 2px;
+        background-color: gold;
+    }
+
+    .table {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+    }
+
+    div>iframe {
+        width: 50vw;
+        margin-top: 30px;
+    }
+
+    .tablesec {
+        height: 60vh;
+        width: 45vw;
+        margin: 20px;
+    }
+
+    .notesright {
+        color: white;
+    }
+
+    .notess {
+        position: absolute;
+        bottom: 150px;
+    }
+
+    #notesimg {
+        display: inline;
+    }
+
+    #notesimg:hover+.notesright {
+        visibility: visible;
+        transform: translate(500px);
+        transition: transform 1s;
+    }
+
+    #roadmap>a>img {
+        width: 30vw;
+    }
+
+    .roadmap {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .moveright {
+        position: relative;
+        bottom: 100px;
+        visibility: hidden;
+    }
+
+    #roadmap:hover+.moveright {
+        visibility: visible;
+        transform: translate(400px);
+        transition: transform 1s;
+    }
+
+    #roadmap {
+        display: inline-block;
+    }
+
+    .click {
+        font-size: 28px;
+        color: bisque;
+    }
+</style>
+
+<body>
+
+
+
+    <header>
+        <div class="table">
+            <div class="tablesec">
+                <div>
+                    <h1>Python Overview</h1>
+                </div>
+                <div>
+                    <p class="roadmap">
+                        Python is a high-level, versatile programming language known for its simplicity and readability.
+                        It's widely used in web development, data analysis, artificial intelligence, scientific
+                        computing,
+                        and more. With an extensive library ecosystem, Python supports rapid development and effective
+                        problem-solving across various domains. Whether you're a beginner or an experienced coder,
+                        Python’s
+                        clear syntax and robust capabilities make it an essential tool in your programming arsenal.
+                    </p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="tablesec">
+                <div>
+                    <h1>Python Data Structures & Algorithms (DSA) Overview</h1>
+                </div>
+                <span>
+                    <p class="roadmap">Unlock the power of Python in mastering Data Structures & Algorithms (DSA). This
+                        guide will
+                        introduce
+                        you to the essential concepts of DSA within Python, a language known for its intuitive syntax
+                        and
+                        powerful features. From basic data structures like lists and dictionaries to advanced algorithms
+                        for
+                        searching and sorting, Python makes learning DSA both accessible and effective. Embark on this
+                        journey to enhance your coding skills and solve complex problems efficiently using Python.</p>
+                </span>
+            </div>
+        </div>
+    </header>
+    <br>
+    <main>
+        <div>
+            <h1>Videos</h1>
+        </div>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UrsmFxEIp5k?si=-KMOCdC-QHdvuVFK"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pkYVOmU3MgA?si=VUM63-oRYLLOr9Mi"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <br>
+        <div>
+            <p class="roadmap">
+                This videos provides a beginner-friendly introduction to common data structures (linked lists, stacks,
+                queues, graphs) and algorithms (search, sorting, recursion, dynamic programming) using Python1
+                . It's designed to help new learners grasp the fundamental concepts and applications of DSA in an
+                easy-to-understand manner.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <br>
+        <div>
+            <h1>Notes</h1>
+        </div>
+        <div id="notesimg">
+            <a href="https://www.geeksforgeeks.org/python-data-structures-and-algorithms/" target="_blank">
+                <img src="python2.avif" alt="" width="500" height="300"></a>
+        </div>
+        <div class="notesright">
+            <p class="roadmap click notess">
+                <=click here to see the complete notes</p>
+        </div>
+        <br>
+        <div>
+            <h1>Roadmap</h1>
+            <br>
+            <div class="roadmap">
+                <p>
+                    Embark on your journey into Python and its Data Structures and Algorithms (DSA) with a well-crafted
+                    roadmap that guides you through the essentials and more.
+                    Start with the official Python website to get acquainted with Python's basics. For a deeper dive,
+                    visit the Python - Wiki article to understand its history and uses. Kickstart your coding skills
+                    with the Tutorial Series: How to Code in Python for step-by-step instructions. Enhance your learning
+                    with Google's Python Class which offers video lectures and exercises. Supplement this with W3Schools
+                    - Python Tutorial for a comprehensive guide to Python programming. Finally, stay updated with the
+                    latest trends and discussions by exploring top posts about Python.
+
+                    In this roadmap, each link provides valuable insights and practical knowledge to build a solid
+                    foundation in Python and master its DSA concepts, ensuring a comprehensive and engaging learning
+                    experience. Dive in and start your journey now!
+                </p>
+            </div>
+            <br>
+            <div id="roadmap">
+                <a href="https://roadmap.sh/python" target="_blank"><img src="python1.avif" alt=""></a>
+            </div>
+            <div class="moveright">
+                <p class="roadmap click">
+                    <=click here to see the complete roadmap</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

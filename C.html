@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./images/logo.jpg">
+    <style>
+        /* General Styles */
+        body {
+            /* background-image: url(2.avif); */
+            background-color: rgb(94, 92, 92);
+            opacity: o.5;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* color: rgb(250, 247, 247); */
+            color: rgb(231, 228, 228);
+            font-family :Arial, sans-serif;
+            margin : 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .roadmap {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .click {
+            font-size: 1.1rem;
+            color: rgb(250, 245, 245);
+        }
+
+        a img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        a img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        /* Hover Effects */
+        .godown,
+        .notesright,
+        .img2text {
+            position: absolute;
+            visibility: hidden;
+            transition: transform 1s, visibility 0.3s ease-in-out;
+        }
+
+        .videoe:hover + .godown,
+        .notesimg:hover + .notesright,
+        .img2:hover + .img2text {
+            visibility: visible;
+            transform: translateX(10px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .roadmap {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .click {
+                font-size: 1rem;
+            }
+
+            a img {
+                width: 100%;
+            }
+
+            .godown,
+            .notesright,
+            .img2text {
+                transform: translateX(0);
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            .roadmap {
+                font-size: 1.1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>C Overview</h1>
+            <p class="roadmap">
+                C is a high-performance, procedural programming language known for its efficiency and control over system resources. It serves as the foundation for many modern programming languages. C is widely used in system programming, embedded systems, operating systems, and hardware-related applications due to its low-level memory manipulation capabilities.
+            </p>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <h1>Videos</h1>
+            <div class="row mb-4">
+                <div class="col-md-6 text-center">
+                    <div class="videoe">
+                        <a href="https://youtu.be/irqbmMNs2Bo?si=lTWV2ZgYOiUhlYPb" target="_blank">
+                            <img src="C1.jpeg" alt="C Video 1">
+                        </a>
+                    </div>
+                    <div class="godown">
+                        <p class="click">⬅ Click here to watch the video</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="notesimg">
+                        <a href="https://youtu.be/7Dh73z3icd8?si=7e4BUHefDLYXlDOb" target="_blank">
+                            <img src="C1.jpeg" alt="C Video 2">
+                        </a>
+                    </div>
+                    <div class="notesright">
+                        <p class="click">⬅ Click here for more lectures</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="roadmap">
+                Start by learning C syntax, data types, and control structures. Understand functions, arrays, and pointers. Dive into memory management with dynamic allocation. Explore structures, file handling, and error handling. Progress to advanced topics like recursion, multi-threading, and algorithms. Practice with projects to solidify knowledge and improve problem-solving skills.
+            </p>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <h1>Notes</h1>
+            <div class="row mb-4">
+                <div class="col-md-6 text-center">
+                    <div class="notesimg">
+                        <a href="https://www.w3schools.com/c/" target="_blank">
+                            <img src="C1.jpeg" alt="C Notes">
+                        </a>
+                    </div>
+                    <div class="notesright">
+                        <p class="click">⬅ Click here to view the notes</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="img2">
+                        <a href="https://www.geeksforgeeks.org/c-programming-language/" target="_blank">
+                            <img src="C1.jpeg" alt="Advanced C Notes">
+                        </a>
+                    </div>
+                    <div class="img2text">
+                        <p>⬅ Click here for advanced notes</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

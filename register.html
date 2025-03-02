@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+    <script>
+        // Function to show the success alert when form is submitted
+        function showAlert(event) {
+            // Prevent the form from submitting (to handle in JS)
+            event.preventDefault();
+
+            // Show the alert box
+            alert("Your account has been created successfully!");
+
+            // Optionally, reset the form after submission or redirect to another page
+            document.querySelector("form").reset();  // Reset form fields (optional)
+            // window.location.href = "login.html";  // Redirect to login page (optional)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="heading">
+        <p class="tutor">
+            Tutor World
+        </p>
+        <div class="list">
+            <!-- Navigation links (can be uncommented and modified if needed) -->
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Enter Your Details</h2>
+        <h4>Learn from India's Best Teachers</h4>
+        
+        <!-- Form with an onsubmit attribute to call the JavaScript function showAlert -->
+        <form onsubmit="showAlert(event)">
+            <div class="login">
+                <div class="left">
+                    <div class="ding">Name: </div>
+                    <div class="ding">Mobile: </div>
+                    <div class="ding">Email: </div>
+                    <div class="ding">Password: </div>
+                </div>
+                <div class="right">
+                    <div class="put"><input type="text" placeholder="Enter Your Name" required></div>
+                    <div class="put"><input type="tel" placeholder="Enter Your Number" required></div>
+                    <div class="put"><input type="email" placeholder="Enter Your email" required></div>
+                    <div class="put"><input type="password" placeholder="Enter Password" required></div>
+                </div>
+            </div>
+            <button type="submit" class="register">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
